@@ -2168,35 +2168,29 @@ const defaultTermsHTML = `<p>I ("the Talent"):</p>
       }
 
      // Load fixed Queensland Government logo and store in localStorage
-        function loadClientLogo() {
-          const logoUrl = "https://upload.wikimedia.org/wikipedia/commons/3/32/Queensland_Government_logo.svg";
-          currentClientLogo = logoUrl;
-        
-          // Update UI
-          const logoImage = document.getElementById("logoImage");
-          const logoPreview = document.getElementById("logoPreview");
-          const logoBtn = document.getElementById("logoUploadBtnInline");
-        
-          if (logoImage) logoImage.src = logoUrl;
-          if (logoPreview) logoPreview.style.display = "flex";
-          if (logoBtn) logoBtn.textContent = "Queensland Gov Logo";
-        
-          // Persist for PDF generation
-          localStorage.setItem("persistent_clientLogo", logoUrl);
-        }
+      function loadClientLogo() {
+        const logoUrl = "https://upload.wikimedia.org/wikipedia/en/a/a1/Queensland_Government_logo.svg";
       
-      // Call this function on page load or when initializing the form
-      loadClientLogo();
+        fetch(logoUrl)
+          .then(res => res.text())
+          .then(svgText => {
+            // Convert SVG text to Base64
+            const base64 = "data:image/svg+xml;base64," + btoa(svgText);
+            currentClientLogo = base64;
       
-      // Optional: remove logo if you still want that functionality
-      function removeClientLogo() {
-        currentClientLogo = null;
-        const logoPreview = document.getElementById("logoPreview");
-        const logoBtn = document.getElementById("logoUploadBtnInline");
+            // Update localStorage for PDF generation
+            localStorage.setItem("persistent_clientLogo", base64);
       
-        if (logoPreview) logoPreview.style.display = "none";
-        if (logoBtn) logoBtn.textContent = "Add Logo";
-        localStorage.removeItem("persistent_clientLogo");
+            // Update UI
+            const logoImage = document.getElementById("logoImage");
+            const logoPreview = document.getElementById("logoPreview");
+            const logoBtn = document.getElementById("logoUploadBtnInline");
+      
+            if (logoImage) logoImage.src = base64;
+            if (logoPreview) logoPreview.style.display = "flex";
+            if (logoBtn) logoBtn.textContent = "Queensland Gov Logo";
+          })
+          .catch(err => console.error("Failed to load logo:", err));
       }
 
       function toggleChildrenSection() {
