@@ -698,6 +698,7 @@
                       id="clientName"
                       name="clientName"
                       required
+                      value="DSDIP"
                       style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 16px; background: var(--bg-primary); color: var(--text-primary);"
                     />
                   </div>
@@ -1001,7 +1002,7 @@
                 <p><strong>Privacy Notice</strong></p>
                 <p>
                   We are collecting your information (and any children, if
-                  applicable) on behalf of the client for purposes as described
+                  applicable) on behalf of the Queensland Government for purposes as described
                   above. This information will only be accessed by authorized
                   personnel involved in the project. Some information may be
                   shared with third parties for the purpose of using and
@@ -1169,22 +1170,35 @@
       let lockHoldTimer = null;
       let lockStartTime = 0;
 
-      // Default Terms and Conditions
-      const defaultTermsHTML = `<p>I grant permission to the <strong>Client</strong>, the <strong>Photographer</strong>, and their representatives or assigns to:</p>
+// Default Terms and Conditions
+const defaultTermsHTML = `<p>I ("the Talent"):</p>
+
 <ol>
-<li>Create images or recordings of me (including video, audio, and still photography);</li>
-<li>Use, reproduce, modify, and publish those materials in whole or in part, in any form and media, including print, digital, social media, advertising, and promotional content;</li>
-<li>Store and retain the materials in any format (physical or digital);</li>
-<li>Use my name and identifying details solely to associate me with this release and the materials covered by it.</li>
-</ol>
-<p>I understand and agree that:</p>
-<ul>
-<li>These rights are granted in perpetuity, worldwide, and without restriction;</li>
-<li>I will not receive payment, royalties, or other compensation for the use of the materials;</li>
-<li>Any content referring to me will be produced in good faith and not intended to defame or misrepresent;</li>
-<li>Copyright and ownership of the materials belong to the Photographer and/or Client;</li>
-<li>I have read and understand this release, and I give my consent voluntarily.</li>
-</ul>`;
+  <li>
+    <strong>agree</strong> to the State of Queensland, its employees, officers, agents and contractors (“the State”):
+    <br><br>
+    (a) making images or recordings, whether sound, digital or otherwise, of me and the Children (“Images and Recordings”);
+    <br><br>
+    (b) using, publishing or reproducing the Images and Recordings in any form (in whole or in part) and by any medium, including but not limited to newspapers, magazines, brochures, television advertisements, promotional videos, websites, CD-ROM or other multi-media, for public relations, promotions, commercial and advertising purposes (“Promotional Materials”), social media platforms; and
+    <br><br>
+    (c) retaining or storing the Images and Recordings (including those incorporated into Promotional Materials), in hard copy or digitally.
+  </li>
+  <li>
+    <strong>agree</strong> that the rights granted to the State under clause 2 of this Photo Consent Form are perpetual and that I will not receive any payment, royalty or other consideration (whether monetary or otherwise) from the State in connection with the making, use or storage of the Images and Recordings.
+  </li>
+  <li>
+    <strong>agree</strong> to the State collecting, storing, handling, accessing, managing, transferring, using and disclosing personal information about me and the Children, including but not limited to our name, details and image, in connection with the Images and Recordings or the Promotional Materials.
+  </li>
+  <li>
+    <strong>acknowledge and agree</strong> that any Promotional Materials which refer to me and the Children, expressly or by implication, are, at the date of publication, made in good faith and are not intended to defame or offend me or the Children or bring me or the Children into disrepute and, to the best of the State’s knowledge, are true and correct.
+  </li>
+  <li>
+    <strong>agree</strong> that the State is the owner of the copyright in the Images and Recordings and the physical Images and Recordings.
+  </li>
+  <li>
+    <strong>acknowledge</strong> that a representative of the State has explained the contents of this Photo Consent Form to me and I am signing this Photo Consent Form of my own free will, on the full understanding and comprehension of the terms of this Photo Consent Form.
+  </li>
+</ol>`;
 
       // Current terms - loaded from storage or default
       let currentTermsHTML = defaultTermsHTML;
@@ -2176,94 +2190,38 @@
         button.className = "btn btn-primary";
       }
 
-      // Client Logo Management
-      function uploadClientLogo() {
-        if (isFormLocked) {
-          alert("Form is locked. Press and hold the lock button for 3 seconds to unlock.");
-          return;
-        }
-        
-        const fileInput = document.getElementById("logoFileInput");
-        fileInput.click();
+      // Client Logo Management (fixed to Queensland Government logo)
+      function loadClientLogo() {
+        const logoUrl = "https://upload.wikimedia.org/wikipedia/commons/3/32/Queensland_Government_logo.svg";
+        currentClientLogo = logoUrl;
+      
+        // Update UI
+        const logoImage = document.getElementById("logoImage");
+        const logoPreview = document.getElementById("logoPreview");
+        const logoBtn = document.getElementById("logoUploadBtnInline");
+      
+        if (logoImage) logoImage.src = logoUrl;
+        if (logoPreview) logoPreview.style.display = "flex";
+        if (logoBtn) logoBtn.textContent = "Change Logo";
+      
+        // Save to localStorage so it persists
+        localStorage.setItem("persistent_clientLogo", logoUrl);
       }
-
-      function handleLogoUpload(event) {
-        const file = event.target.files[0];
-        if (!file) return;
-
-        // Validate file type
-        if (!file.type.startsWith('image/')) {
-          alert('Please select an image file.');
-          return;
-        }
-
-        // Validate file size (limit to 5MB)
-        if (file.size > 5 * 1024 * 1024) {
-          alert('Image file is too large. Please select an image smaller than 5MB.');
-          return;
-        }
-
-        const reader = new FileReader();
-        reader.onload = function(e) {
-          // Create an image to get dimensions and compress if needed
-          const img = new Image();
-          img.onload = function() {
-            // Create canvas for compression and sizing
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            
-            // Calculate scaling to fit within reasonable bounds for PDF
-            const maxWidth = 400;
-            const maxHeight = 200;
-            let { width, height } = img;
-            
-            // Scale down if too large
-            if (width > maxWidth || height > maxHeight) {
-              const scale = Math.min(maxWidth / width, maxHeight / height);
-              width *= scale;
-              height *= scale;
-            }
-            
-            canvas.width = width;
-            canvas.height = height;
-            
-            // Fill with white background to handle PNG transparency
-            ctx.fillStyle = 'white';
-            ctx.fillRect(0, 0, width, height);
-            
-            // Draw image on top
-            ctx.drawImage(img, 0, 0, width, height);
-            
-            // Convert to base64 with compression
-            currentClientLogo = canvas.toDataURL('image/jpeg', 0.8);
-            
-            // Update UI
-            document.getElementById("logoImage").src = currentClientLogo;
-            document.getElementById("logoPreview").style.display = "flex";
-            document.getElementById("logoUploadBtnInline").textContent = "Change Logo";
-            
-            // Save to localStorage
-            localStorage.setItem("persistent_clientLogo", currentClientLogo);
-          };
-          img.src = e.target.result;
-        };
-        reader.readAsDataURL(file);
-        
-        // Clear the file input
-        event.target.value = '';
-      }
-
+      
+      // Call this function on page load or when initializing the form
+      loadClientLogo();
+      
+      // Optional: remove logo if you still want that functionality
       function removeClientLogo() {
-        if (isFormLocked) {
-          alert("Form is locked. Press and hold the lock button for 3 seconds to unlock.");
-          return;
-        }
-        
         currentClientLogo = null;
-        document.getElementById("logoPreview").style.display = "none";
-        document.getElementById("logoUploadBtnInline").textContent = "Add Logo";
+        const logoPreview = document.getElementById("logoPreview");
+        const logoBtn = document.getElementById("logoUploadBtnInline");
+      
+        if (logoPreview) logoPreview.style.display = "none";
+        if (logoBtn) logoBtn.textContent = "Add Logo";
         localStorage.removeItem("persistent_clientLogo");
       }
+
       function toggleChildrenSection() {
         const section = document.getElementById("childrenSection");
         const button = document.getElementById("childrenToggle");
