@@ -1,0 +1,3320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talent Release Forms</title>
+    <link
+      rel="manifest"
+      href="data:application/json;base64,eyJuYW1lIjoiVGFsZW50IFJlbGVhc2UgRm9ybXMiLCJzaG9ydF9uYW1lIjoiVGFsZW50UmVsZWFzZSIsImRlc2NyaXB0aW9uIjoiRGlnaXRhbCB0YWxlbnQgcmVsZWFzZSBmb3JtIGNhcHR1cmUgYXBwIiwic3RhcnRfdXJsIjoiLyIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiMxZTI5M2IiLCJ0aGVtZV9jb2xvciI6IiMzYjgyZjYiLCJpY29ucyI6W3sic3JjIjoiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTWpRaUlHaGxhV2RvZEQwaU1qUWlJSFpwWlhkQ2IzZzlJakFnTUNBeU5DQXlOQ0lnWm1sc2JEMGlJek0yT0RKbU5pSStQSEpsWTNRZ2VEMGlOaUlnZVQwaU5pSWdkMmxrZEdnOUlqRXlJaUJvWldsbmFIUTlJakV5SWlCeWVEMGlNaUlnWm1sc2JEMGlJek0yT0RKbU5pSXZQand2YzNablBnPT0iLCJzaXplcyI6IjI0eDI0IiwidHlwZSI6ImltYWdlL3N2Zyt4bWwifV19"
+    />
+    <meta name="theme-color" content="#3b82f6" />
+    <style>
+      :root {
+        --primary: #3b82f6;
+        --primary-dark: #2563eb;
+        --secondary: #64748b;
+        --success: #10b981;
+        --danger: #ef4444;
+        --warning: #f59e0b;
+        --bg-primary: #ffffff;
+        --bg-secondary: #f8fafc;
+        --bg-tertiary: #e2e8f0;
+        --text-primary: #1e293b;
+        --text-secondary: #64748b;
+        --border: #e2e8f0;
+        --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+
+      [data-theme="dark"] {
+        --primary: #60a5fa;
+        --primary-dark: #3b82f6;
+        --secondary: #94a3b8;
+        --success: #34d399;
+        --danger: #f87171;
+        --warning: #fbbf24;
+        --bg-primary: #000000;
+        --bg-secondary: #111111;
+        --bg-tertiary: #222222;
+        --text-primary: #ffffff;
+        --text-secondary: #cccccc;
+        --border: #333333;
+        --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        line-height: 1.6;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .container {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      .header {
+        background: var(--bg-secondary);
+        border-bottom: 1px solid var(--border);
+        padding: 16px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--primary);
+      }
+
+      .nav-buttons {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .btn {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background: var(--primary-dark);
+      }
+
+      .btn-secondary {
+        background: var(--bg-tertiary);
+        color: var(--text-primary);
+      }
+
+      .btn-secondary:hover {
+        background: var(--secondary);
+      }
+
+      .btn-icon {
+        padding: 8px;
+        border-radius: 50%;
+      }
+
+      .main-content {
+        padding: 24px 0;
+      }
+
+      .form-container {
+        background: var(--bg-secondary);
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: var(--shadow);
+        margin-bottom: 24px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: var(--text-primary);
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        font-size: 16px;
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        transition: border-color 0.2s ease;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+      }
+
+      /* Field error state */
+      .form-group.error input,
+      .form-group.error select,
+      .form-group.error textarea {
+        border-color: var(--danger);
+      }
+
+      .form-section {
+        margin-bottom: 32px;
+      }
+
+      .form-section h3 {
+        margin-bottom: 16px;
+        color: var(--primary);
+        font-size: 18px;
+      }
+
+      .persistent-fields {
+        border: 2px dashed var(--border);
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 24px;
+      }
+
+      .persistent-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      .terms-container {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        max-height: 200px;
+        overflow-y: auto;
+        padding: 20px 24px;
+        background: var(--bg-primary);
+        margin-bottom: 16px;
+      }
+
+      .checkbox-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .checkbox-group input[type="checkbox"] {
+        width: auto;
+        margin: 0;
+      }
+
+      /* Checkbox error state */
+      .checkbox-group.error input[type="checkbox"] {
+        outline: 2px solid var(--danger);
+        outline-offset: 2px;
+      }
+
+      .signature-container {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--bg-primary);
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+
+      /* Signature error state */
+      .signature-container.error {
+        border-color: var(--danger);
+      }
+
+      .signature-canvas {
+        width: 100%;
+        height: 200px;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        cursor: crosshair;
+        background: white;
+        display: block; /* Ensure proper block display */
+      }
+
+      .signature-controls {
+        display: flex;
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .camera-container {
+        text-align: center;
+        padding: 16px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--bg-primary);
+      }
+
+      .camera-preview {
+        width: 100%;
+        max-width: 300px;
+        height: 300px; /* Square aspect ratio */
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        object-fit: cover; /* Center crop to square */
+        margin-bottom: 12px;
+      }
+
+      .camera-preview.front-camera {
+        transform: scaleX(-1); /* Mirror front camera preview */
+      }
+
+      .photo-preview {
+        width: 100%;
+        max-width: 300px;
+        height: 300px; /* Square aspect ratio */
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        object-fit: cover; /* Maintain square display */
+        margin-bottom: 12px;
+      }
+
+      .theme-toggle {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+      }
+
+      .theme-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--bg-tertiary);
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        border: 2px solid var(--border);
+      }
+
+      .theme-slider:before {
+        position: absolute;
+        content: "";
+        height: 22px;
+        width: 22px;
+        left: 2px;
+        bottom: 2px;
+        background: var(--bg-primary);
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .theme-slider.active {
+        background: var(--primary);
+        border-color: var(--primary);
+      }
+
+      .theme-slider.active:before {
+        transform: translateX(30px);
+        background: #ffffff;
+      }
+
+      .theme-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 12px;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .theme-icon.sun {
+        left: 6px;
+        opacity: 1;
+      }
+
+      .theme-icon.moon {
+        right: 6px;
+        opacity: 0.4;
+      }
+
+      .theme-slider.active .theme-icon.sun {
+        opacity: 0.4;
+      }
+
+      .theme-slider.active .theme-icon.moon {
+        opacity: 1;
+      }
+
+      /* Sun icon - simple circle with rays */
+      .sun-icon {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: currentColor;
+        position: relative;
+      }
+
+      .sun-icon::before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        border-radius: 50%;
+        border: 1px solid currentColor;
+        border-style: dashed;
+        opacity: 0.6;
+      }
+
+      /* Moon icon - simple crescent */
+      .moon-icon {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: currentColor;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .moon-icon::before {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 3px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--bg-tertiary);
+        box-shadow: 0 0 0 1px var(--bg-tertiary);
+      }
+
+      .history-container {
+        background: var(--bg-secondary);
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: var(--shadow);
+      }
+
+      .history-item {
+        padding: 16px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        margin-bottom: 12px;
+        background: var(--bg-primary);
+      }
+
+      .history-item h4 {
+        margin-bottom: 8px;
+        color: var(--primary);
+      }
+
+      .history-meta {
+        color: var(--text-secondary);
+        font-size: 14px;
+      }
+
+      .status-indicator {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 8px;
+      }
+
+      .status-success {
+        background: var(--success);
+        color: white;
+      }
+
+      .status-pending {
+        background: var(--warning);
+        color: white;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      .loading {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      .error {
+        color: var(--danger);
+        font-size: 14px;
+        margin-top: 4px;
+      }
+
+      .success {
+        color: var(--success);
+        font-size: 14px;
+        margin-top: 4px;
+      }
+
+      /* Success message styles */
+      .success-message {
+        background: #f0fdf4;
+        border: 1px solid var(--success);
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 16px;
+        color: var(--success);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      [data-theme="dark"] .success-message {
+        background: rgba(16, 185, 129, 0.1);
+        border-color: var(--success);
+      }
+
+      .success-message h4 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      /* Validation error message styles */
+      .validation-errors {
+        background: #fef2f2;
+        border: 1px solid var(--danger);
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 16px;
+        color: var(--danger);
+      }
+
+      [data-theme="dark"] .validation-errors {
+        background: rgba(239, 68, 68, 0.1);
+        border-color: var(--danger);
+      }
+
+      .validation-errors h4 {
+        margin: 0 0 8px 0;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .validation-errors ul {
+        margin: 0;
+        padding-left: 20px;
+        font-size: 13px;
+      }
+
+      .validation-errors li {
+        margin-bottom: 4px;
+      }
+
+      /* Lock button styles */
+      .lock-button {
+        position: relative;
+        padding: 8px;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.2s ease;
+        border: 2px solid var(--border);
+        background: var(--bg-primary);
+        flex-shrink: 0;
+      }
+
+      .lock-button:hover {
+        background: var(--bg-tertiary);
+      }
+
+      .lock-button.locked {
+        color: var(--danger);
+        border-color: var(--danger);
+      }
+
+      .lock-button.holding {
+        transform: scale(1.1);
+      }
+
+      .lock-progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: var(--primary);
+        opacity: 0;
+        transform: rotate(0deg);
+        transition: opacity 0.2s ease;
+      }
+
+      .lock-progress.active {
+        opacity: 1;
+        animation: lockProgress 3s linear;
+      }
+
+      @keyframes lockProgress {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .lock-icon {
+        font-size: 16px;
+        z-index: 1;
+      }
+
+      .form-locked-indicator {
+        color: var(--danger);
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          padding: 0 12px;
+        }
+
+        .form-container {
+          padding: 16px;
+        }
+
+        .nav-buttons {
+          gap: 4px;
+        }
+
+        .btn {
+          padding: 6px 12px;
+          font-size: 13px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">Talent Release</div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="form-locked-indicator hidden" id="lockedIndicator">FORM LOCKED</span>
+            <div class="nav-buttons">
+              <div 
+                class="lock-button" 
+                id="lockButton"
+                onmousedown="startLockHold(event)"
+                onmouseup="endLockHold()"
+                onmouseleave="endLockHold()"
+                ontouchstart="startLockHold(event)"
+                ontouchend="endLockHold()"
+                ontouchcancel="endLockHold()"
+                title="Press and hold for 3 seconds to lock/unlock form"
+              >
+                <div class="lock-progress" id="lockProgress"></div>
+                <span class="lock-icon" id="lockIcon">🔓</span>
+              </div>
+              <button class="btn btn-secondary" onclick="showHistory()">
+                History
+              </button>
+              <button class="theme-toggle" onclick="toggleTheme()">
+                <div class="theme-slider" id="themeSlider">
+                  <span class="theme-icon sun">
+                    <div class="sun-icon"></div>
+                  </span>
+                  <span class="theme-icon moon">
+                    <div class="moon-icon"></div>
+                  </span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main-content">
+        <!-- Form View -->
+        <div id="form-view">
+          <div class="form-container">
+            <div class="form-section">
+              <div class="persistent-fields">
+                <div class="persistent-header">
+                  <h3>Persistent Project Information</h3>
+                  <button
+                    class="btn btn-secondary"
+                    onclick="clearProjectInfo()"
+                    id="clearProjectBtn"
+                  >
+                    Clear Project Info
+                  </button>
+                </div>
+                <p
+                  style="
+                    margin-bottom: 16px;
+                    color: var(--text-secondary);
+                    font-size: 14px;
+                  "
+                >
+                  All fields below are required and saved across sessions
+                </p>
+
+                <div style="display: flex; gap: 20px; align-items: stretch; margin-bottom: 20px;">
+                  <div style="flex: 1; display: flex; flex-direction: column;">
+                    <label for="clientName" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--text-primary);">Client Name *</label>
+                    <input
+                      type="text"
+                      id="clientName"
+                      name="clientName"
+                      required
+                      style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 16px; background: var(--bg-primary); color: var(--text-primary);"
+                    />
+                  </div>
+                  <div id="logoColumnContainer" style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; min-width: 140px;">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      onclick="uploadClientLogo()"
+                      id="logoUploadBtnInline"
+                      style="white-space: nowrap; align-self: stretch;"
+                    >
+                      Add Client Logo
+                    </button>
+                    <div id="logoPreview" style="display: none; flex-direction: column; align-items: center; gap: 6px;">
+                      <img id="logoImage" style="max-width: 120px; max-height: 60px; object-fit: contain; border: 1px solid var(--border); border-radius: 4px; background: white;" />
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        onclick="removeClientLogo()"
+                        style="font-size: 10px; padding: 2px 6px;"
+                        id="logoRemoveBtn"
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <input type="file" id="logoFileInput" accept="image/*" style="display: none;" onchange="handleLogoUpload(event)" />
+
+                <div class="form-group" id="projectName-group">
+                  <label for="projectName">Project Name *</label>
+                  <input
+                    type="text"
+                    id="projectName"
+                    name="projectName"
+                    required
+                  />
+                </div>
+
+                <div class="form-group" id="location-group">
+                  <label for="location">Location *</label>
+                  <input type="text" id="location" name="location" required />
+                </div>
+
+                <div style="display: flex; gap: 12px">
+                  <div
+                    class="form-group"
+                    id="photographer-group"
+                    style="flex: 1; margin-bottom: 0"
+                  >
+                    <label for="photographer">Photographer *</label>
+                    <input
+                      type="text"
+                      id="photographer"
+                      name="photographer"
+                      required
+                    />
+                  </div>
+
+                  <div
+                    class="form-group"
+                    id="witness-group"
+                    style="flex: 1; margin-bottom: 0"
+                  >
+                    <label for="witness">Witness *</label>
+                    <input type="text" id="witness" name="witness" required />
+                  </div>
+                </div>
+
+                <div class="form-group" style="margin-top: 20px">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      margin-bottom: 16px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center; gap: 12px">
+                      <label style="margin-bottom: 0">Witness Signature</label>
+                      <div id="witnessSignaturePreview" style="display: none">
+                        <small style="color: var(--success); line-height: 1"
+                          >Witness signature captured</small
+                        >
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      id="witnessSignatureToggle"
+                      onclick="toggleWitnessSignature()"
+                    >
+                      Add Witness Signature
+                    </button>
+                  </div>
+                  <div
+                    class="signature-container"
+                    id="witnessSignatureContainer"
+                    style="display: none"
+                  >
+                    <canvas
+                      id="witnessSignatureCanvas"
+                      class="signature-canvas"
+                    ></canvas>
+                    <div class="signature-controls">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        onclick="clearWitnessSignature()"
+                      >
+                        Clear
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>Talent Information</h3>
+
+              <div class="form-group" id="talentName-group">
+                <label for="talentName">Name *</label>
+                <input type="text" id="talentName" name="talentName" required />
+              </div>
+
+              <div style="display: flex; gap: 12px">
+                <div
+                  class="form-group"
+                  id="phone-group"
+                  style="flex: 1; margin-bottom: 0"
+                >
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+
+                <div
+                  class="form-group"
+                  id="email-group"
+                  style="flex: 1; margin-bottom: 0"
+                >
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+
+              <div
+                class="checkbox-group"
+                id="ageConfirm-group"
+                style="margin-top: 20px"
+              >
+                <input
+                  type="checkbox"
+                  id="ageConfirm"
+                  name="ageConfirm"
+                  required
+                />
+                <label for="ageConfirm"
+                  >I confirm that I am 18 years of age or older and legally able
+                  to give consent. *</label
+                >
+              </div>
+
+              <div
+                style="display: flex; justify-content: center; margin-top: 20px"
+              >
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  id="childrenToggle"
+                  onclick="toggleChildrenSection()"
+                >
+                  Add Children/Dependants
+                </button>
+              </div>
+
+              <div
+                id="childrenSection"
+                style="
+                  display: none;
+                  margin-top: 20px;
+                  padding: 20px;
+                  border: 2px solid var(--primary);
+                  border-radius: 12px;
+                  background: var(--bg-tertiary);
+                "
+              >
+                <h4 style="margin-bottom: 16px; color: var(--primary)">
+                  Children/Dependants Information
+                </h4>
+
+                <div style="display: flex; gap: 12px; margin-bottom: 20px">
+                  <div
+                    class="form-group"
+                    id="childName1-group"
+                    style="flex: 1; margin-bottom: 0"
+                  >
+                    <label for="childName1">Child Name 1 *</label>
+                    <input type="text" id="childName1" name="childName1" />
+                  </div>
+
+                  <div class="form-group" style="flex: 1; margin-bottom: 0">
+                    <label for="childName2">Child Name 2</label>
+                    <input type="text" id="childName2" name="childName2" />
+                  </div>
+
+                  <div class="form-group" style="flex: 1; margin-bottom: 0">
+                    <label for="childName3">Child Name 3</label>
+                    <input type="text" id="childName3" name="childName3" />
+                  </div>
+                </div>
+
+                <div class="checkbox-group" id="guardianConfirm-group">
+                  <input
+                    type="checkbox"
+                    id="guardianConfirm"
+                    name="guardianConfirm"
+                  />
+                  <label for="guardianConfirm"
+                    >I declare that I am the parent or legal guardian of the
+                    child(ren) named above.*</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                <h3 style="margin-bottom: 0;">Talent Release Agreement</h3>
+                <button 
+                  class="btn btn-secondary" 
+                  onclick="toggleTermsEditor()"
+                  id="termsEditorToggle"
+                >
+                  Modify Talent Release Agreement
+                </button>
+              </div>
+
+              <!-- Terms Editor Section (Hidden by default) -->
+              <div id="termsEditorSection" class="hidden" style="margin-bottom: 20px;">
+                <div style="background: var(--bg-tertiary); padding: 16px; border-radius: 8px; margin-bottom: 16px;">
+                  <h4 style="margin-bottom: 12px; color: var(--primary);">Custom Talent Release Agreement Editor</h4>
+                  <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">
+                    Paste your custom talent release agreement below. You can use HTML formatting (p, strong, em, ol, ul, li tags).
+                    <br>
+                    <strong>Tip:</strong> Use <a href="https://text-html.com/" target="_blank" style="color: var(--primary); text-decoration: none;">text-html.com</a> for easy text-to-HTML conversion.
+                  </p>
+                  
+                  <div class="form-group">
+                    <label for="termsEditor">Talent Release Agreement HTML:</label>
+                    <textarea 
+                      id="termsEditor" 
+                      rows="10" 
+                      style="font-family: monospace; font-size: 13px;"
+                      placeholder="Paste your HTML formatted talent release agreement here..."
+                    ></textarea>
+                  </div>
+
+                  <div style="display: flex; gap: 8px;">
+                    <button class="btn btn-primary" onclick="saveCustomTerms()">
+                      Save Custom Agreement
+                    </button>
+                    <button class="btn btn-secondary" onclick="restoreDefaultTerms()">
+                      Restore to Default
+                    </button>
+                    <button class="btn btn-secondary" onclick="cancelTermsEdit()">
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="terms-container" id="termsContainer">
+                <!-- Terms content will be populated here -->
+              </div>
+
+              <div class="checkbox-group" id="agreeTerms-group">
+                <input
+                  type="checkbox"
+                  id="agreeTerms"
+                  name="agreeTerms"
+                  required
+                />
+                <label for="agreeTerms"
+                  >I have read and agree to the terms and conditions above
+                  *</label
+                >
+              </div>
+
+              <div
+                style="
+                  margin-top: 12px;
+                  padding: 12px;
+                  background: var(--bg-tertiary);
+                  border-radius: 8px;
+                  font-size: 12px;
+                  color: var(--text-secondary);
+                  line-height: 1.4;
+                "
+              >
+                <p><strong>Privacy Notice</strong></p>
+                <p>
+                  We are collecting your information (and any children, if
+                  applicable) on behalf of the client for purposes as described
+                  above. This information will only be accessed by authorized
+                  personnel involved in the project. Some information may be
+                  shared with third parties for the purpose of using and
+                  managing these images and recordings. Your information will
+                  not be disclosed to any other parties unless you have provided
+                  consent or we are required or permitted to do so by law.
+                </p>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>Signature</h3>
+
+              <div class="signature-container" id="signature-container">
+                <canvas id="signatureCanvas" class="signature-canvas"></canvas>
+                <div class="signature-controls">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    onclick="clearSignature()"
+                  >
+                    Clear
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>Photo Capture (Optional)</h3>
+
+              <div class="camera-container">
+                <video
+                  id="cameraPreview"
+                  class="camera-preview hidden"
+                  autoplay
+                  playsinline
+                ></video>
+                <img
+                  id="photoPreview"
+                  class="photo-preview hidden"
+                  alt="Captured photo"
+                />
+                <canvas id="photoCanvas" class="hidden"></canvas>
+
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="startCamera()"
+                  >
+                    Take Photo
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary hidden"
+                    onclick="capturePhoto()"
+                  >
+                    Capture
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary hidden"
+                    onclick="switchCamera()"
+                    id="switchCameraBtn"
+                  >
+                    Switch Camera
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary hidden"
+                    onclick="retakePhoto()"
+                  >
+                    Retake
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <!-- Success message container -->
+              <div id="successMessage" class="success-message hidden">
+                <div
+                  style="
+                    width: 20px;
+                    height: 20px;
+                    background: var(--success);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 12px;
+                  "
+                >
+                  ✓
+                </div>
+                <h4>Form successfully captured!</h4>
+              </div>
+
+              <!-- Validation error messages container -->
+              <div id="validationErrors" class="validation-errors hidden">
+                <h4>Please correct the following errors:</h4>
+                <ul id="errorList"></ul>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary"
+                onclick="submitForm()"
+                style="width: 100%; padding: 16px; font-size: 16px"
+              >
+                Submit Release Form
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- History View -->
+        <div id="history-view" class="hidden">
+          <div class="history-container">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 24px;
+              "
+            >
+              <h2>Form History</h2>
+              <div style="display: flex; gap: 8px;">
+                <button 
+                  class="btn btn-secondary" 
+                  onclick="clearHistoryWithConfirmation()"
+                  style="background: var(--danger); color: white;"
+                  id="clearHistoryBtn"
+                >
+                  Clear History
+                </button>
+                <button class="btn btn-secondary" onclick="showForm()">
+                  ← Back to Form
+                </button>
+              </div>
+            </div>
+
+            <div id="historyList">
+              <!-- History items will be populated here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+      // App State
+      let currentSignature = null;
+      let currentWitnessSignature = null;
+      let currentPhoto = null;
+      let currentClientLogo = null;
+      let isDrawing = false;
+      let cameraStream = null;
+      let currentFacingMode = "user"; // Start with front camera
+      let isFormLocked = false;
+      let lockHoldTimer = null;
+      let lockStartTime = 0;
+
+      // Default Terms and Conditions
+      const defaultTermsHTML = `<p>I grant permission to the <strong>Client</strong>, the <strong>Photographer</strong>, and their representatives or assigns to:</p>
+<ol>
+<li>Create images or recordings of me (including video, audio, and still photography);</li>
+<li>Use, reproduce, modify, and publish those materials in whole or in part, in any form and media, including print, digital, social media, advertising, and promotional content;</li>
+<li>Store and retain the materials in any format (physical or digital);</li>
+<li>Use my name and identifying details solely to associate me with this release and the materials covered by it.</li>
+</ol>
+<p>I understand and agree that:</p>
+<ul>
+<li>These rights are granted in perpetuity, worldwide, and without restriction;</li>
+<li>I will not receive payment, royalties, or other compensation for the use of the materials;</li>
+<li>Any content referring to me will be produced in good faith and not intended to defame or misrepresent;</li>
+<li>Copyright and ownership of the materials belong to the Photographer and/or Client;</li>
+<li>I have read and understand this release, and I give my consent voluntarily.</li>
+</ul>`;
+
+      // Current terms - loaded from storage or default
+      let currentTermsHTML = defaultTermsHTML;
+
+      // Initialize App
+      document.addEventListener("DOMContentLoaded", function () {
+        initializeApp();
+      });
+
+      function initializeApp() {
+        // Load theme
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+        updateThemeToggle();
+
+        // Load persistent fields
+        loadPersistentFields();
+
+        // Load form lock state
+        loadFormLockState();
+
+        // Initialize signature canvas
+        initializeSignatureCanvas();
+        initializeWitnessSignatureCanvas();
+
+        // Add auto-save listeners for persistent fields
+        setupPersistentFieldAutoSave();
+
+        // Load custom terms AFTER DOM is ready
+        setTimeout(() => {
+          loadCustomTerms();
+          updateFormLockState(); // Initialize lock state
+          updateThemeToggle(); // Ensure theme toggle is properly initialized
+        }, 100);
+
+        // Force witness signature container to be hidden - run after everything else
+        setTimeout(() => {
+          const container = document.getElementById(
+            "witnessSignatureContainer"
+          );
+          if (container) {
+            container.style.display = "none";
+          }
+        }, 200);
+
+        // Register service worker
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+            .register(
+              "data:text/javascript;base64,c2VsZi5hZGRFdmVudExpc3RlbmVyKCdpbnN0YWxsJywgZnVuY3Rpb24oZXZlbnQpIHsKICBjb25zb2xlLmxvZygnU2VydmljZSBXb3JrZXIgaW5zdGFsbGVkJyk7Cn0pOwoKc2VsZi5hZGRFdmVudExpc3RlbmVyKCdmZXRjaCcsIGZ1bmN0aW9uKGV2ZW50KSB7CiAgZXZlbnQucmVzcG9uZFdpdGgoY2FjaGVzLm1hdGNoKGV2ZW50LnJlcXVlc3QpKTsKfSk7"
+            )
+            .then((registration) => console.log("SW registered"))
+            .catch((error) => console.log("SW registration failed"));
+        }
+      }
+
+      // Validation Functions
+      function validateForm() {
+        const errors = [];
+
+        // Clear previous error states
+        clearValidationErrors();
+
+        // Required text fields
+        const requiredFields = [
+          { id: "clientName", name: "Client Name" },
+          { id: "projectName", name: "Project Name" },
+          { id: "location", name: "Location" },
+          { id: "photographer", name: "Photographer" },
+          { id: "witness", name: "Witness" },
+          { id: "talentName", name: "Talent Name" },
+          { id: "email", name: "Email Address" },
+        ];
+
+        for (const field of requiredFields) {
+          const value = document.getElementById(field.id).value.trim();
+          if (!value) {
+            errors.push(`${field.name} is required`);
+            addFieldError(field.id);
+          }
+        }
+
+        // Email validation
+        const email = document.getElementById("email").value.trim();
+        if (email && !isValidEmail(email)) {
+          errors.push("Please enter a valid email address");
+          addFieldError("email");
+        }
+
+        // Required checkboxes
+        const agreeTerms = document.getElementById("agreeTerms").checked;
+        if (!agreeTerms) {
+          errors.push("You must agree to the talent release agreement");
+          addCheckboxError("agreeTerms");
+        }
+
+        const ageConfirm = document.getElementById("ageConfirm").checked;
+        if (!ageConfirm) {
+          errors.push("You must confirm that you are 18 years of age or older");
+          addCheckboxError("ageConfirm");
+        }
+
+        // Children section validation (if visible)
+        const childrenSection = document.getElementById("childrenSection");
+        const isChildrenVisible = childrenSection.style.display !== "none";
+
+        if (isChildrenVisible) {
+          const childName1 = document.getElementById("childName1").value.trim();
+          const guardianConfirm =
+            document.getElementById("guardianConfirm").checked;
+
+          if (!childName1) {
+            errors.push(
+              "At least one child name is required when children section is visible"
+            );
+            addFieldError("childName1");
+          }
+
+          if (!guardianConfirm) {
+            errors.push(
+              "You must confirm that you are the parent or legal guardian"
+            );
+            addCheckboxError("guardianConfirm");
+          }
+        }
+
+        // Signature validation
+        if (!currentSignature) {
+          errors.push("Signature is required");
+          addSignatureError();
+        }
+
+        return errors;
+      }
+
+      function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+
+      function clearValidationErrors() {
+        // Hide error container
+        document.getElementById("validationErrors").classList.add("hidden");
+
+        // Hide success message
+        document.getElementById("successMessage").classList.add("hidden");
+
+        // Clear field error states
+        const errorGroups = document.querySelectorAll(
+          ".form-group.error, .checkbox-group.error"
+        );
+        errorGroups.forEach((group) => group.classList.remove("error"));
+
+        // Clear signature error
+        document
+          .getElementById("signature-container")
+          .classList.remove("error");
+      }
+
+      function addFieldError(fieldId) {
+        const group = document.getElementById(fieldId + "-group");
+        if (group) {
+          group.classList.add("error");
+        }
+      }
+
+      function addCheckboxError(fieldId) {
+        const group = document.getElementById(fieldId + "-group");
+        if (group) {
+          group.classList.add("error");
+        }
+      }
+
+      function addSignatureError() {
+        document.getElementById("signature-container").classList.add("error");
+      }
+
+      function displayValidationErrors(errors) {
+        if (errors.length === 0) {
+          return;
+        }
+
+        const errorContainer = document.getElementById("validationErrors");
+        const errorList = document.getElementById("errorList");
+
+        // Clear previous errors
+        errorList.innerHTML = "";
+
+        // Add new errors
+        errors.forEach((error) => {
+          const li = document.createElement("li");
+          li.textContent = error;
+          errorList.appendChild(li);
+        });
+
+        // Show error container
+        errorContainer.classList.remove("hidden");
+
+        // Scroll to errors
+        errorContainer.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+        });
+      }
+
+      function displaySuccessMessage() {
+        const successContainer = document.getElementById("successMessage");
+
+        // Show success container
+        successContainer.classList.remove("hidden");
+
+        // Scroll to success message
+        successContainer.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+        });
+
+        // Auto-hide after 5 seconds
+        setTimeout(() => {
+          successContainer.classList.add("hidden");
+        }, 5000);
+      }
+
+      // Theme Management
+      function toggleTheme() {
+        const currentTheme =
+          document.documentElement.getAttribute("data-theme");
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+        updateThemeToggle();
+      }
+
+      function updateThemeToggle() {
+        const theme = document.documentElement.getAttribute("data-theme");
+        const slider = document.getElementById("themeSlider");
+
+        if (theme === "dark") {
+          slider.classList.add("active");
+        } else {
+          slider.classList.remove("active");
+        }
+      }
+
+      // Auto-save persistent fields on change
+      function setupPersistentFieldAutoSave() {
+        const persistentFields = [
+          "clientName",
+          "projectName", 
+          "location",
+          "photographer",
+          "witness"
+        ];
+        
+        persistentFields.forEach(fieldId => {
+          const field = document.getElementById(fieldId);
+          if (field) {
+            // Save on blur (when user leaves the field)
+            field.addEventListener('blur', function() {
+              if (this.value.trim()) {
+                localStorage.setItem(`persistent_${fieldId}`, this.value);
+              } else {
+                localStorage.removeItem(`persistent_${fieldId}`);
+              }
+            });
+            
+            // Also save on input with debounce for real-time saving
+            let saveTimeout;
+            field.addEventListener('input', function() {
+              clearTimeout(saveTimeout);
+              saveTimeout = setTimeout(() => {
+                if (this.value.trim()) {
+                  localStorage.setItem(`persistent_${fieldId}`, this.value);
+                } else {
+                  localStorage.removeItem(`persistent_${fieldId}`);
+                }
+              }, 1000); // Save 1 second after user stops typing
+            });
+          }
+        });
+      }
+
+      // Persistent Fields Management
+      function loadPersistentFields() {
+        const persistentFields = [
+          "clientName",
+          "projectName",
+          "location",
+          "photographer",
+          "witness",
+        ];
+        persistentFields.forEach((field) => {
+          const savedValue = localStorage.getItem(`persistent_${field}`);
+          if (savedValue) {
+            document.getElementById(field).value = savedValue;
+          }
+        });
+
+        // Load witness signature but keep UI collapsed
+        const savedWitnessSignature = localStorage.getItem(
+          "persistent_witnessSignature"
+        );
+        const container = document.getElementById("witnessSignatureContainer");
+        const button = document.getElementById("witnessSignatureToggle");
+
+        // Force container to be hidden initially
+        container.style.display = "none";
+
+        if (savedWitnessSignature) {
+          currentWitnessSignature = savedWitnessSignature;
+          // Update button and preview state
+          button.textContent = "Show Signature Box";
+          button.className = "btn btn-secondary";
+          document.getElementById("witnessSignaturePreview").style.display =
+            "block";
+        } else {
+          // Ensure clean state if no signature
+          button.textContent = "Add Witness Signature";
+          button.className = "btn btn-primary";
+          document.getElementById("witnessSignaturePreview").style.display =
+            "none";
+        }
+
+        // Load client logo
+        const savedClientLogo = localStorage.getItem("persistent_clientLogo");
+        if (savedClientLogo) {
+          currentClientLogo = savedClientLogo;
+          document.getElementById("logoImage").src = savedClientLogo;
+          document.getElementById("logoPreview").style.display = "flex";
+          document.getElementById("logoUploadBtnInline").textContent = "Change Logo";
+        } else {
+          document.getElementById("logoPreview").style.display = "none";
+          document.getElementById("logoUploadBtnInline").textContent = "Add Logo";
+        }
+      }
+
+      function savePersistentFields() {
+        const persistentFields = [
+          "clientName",
+          "projectName",
+          "location",
+          "photographer",
+          "witness",
+        ];
+        persistentFields.forEach((field) => {
+          const value = document.getElementById(field).value;
+          if (value) {
+            localStorage.setItem(`persistent_${field}`, value);
+          }
+        });
+
+        // Save witness signature
+        if (currentWitnessSignature) {
+          localStorage.setItem(
+            "persistent_witnessSignature",
+            currentWitnessSignature
+          );
+        }
+
+        // Save client logo
+        if (currentClientLogo) {
+          localStorage.setItem("persistent_clientLogo", currentClientLogo);
+        }
+      }
+
+      function clearProjectInfo() {
+        if (isFormLocked) {
+          alert("Form is locked. Press and hold the lock button for 3 seconds to unlock.");
+          return;
+        }
+
+        console.log("Clearing project info directly");
+
+        // Clear all form fields
+        document.getElementById("clientName").value = "";
+        document.getElementById("projectName").value = "";
+        document.getElementById("location").value = "";
+        document.getElementById("photographer").value = "";
+        document.getElementById("witness").value = "";
+
+        // Clear localStorage
+        localStorage.removeItem("persistent_clientName");
+        localStorage.removeItem("persistent_projectName");
+        localStorage.removeItem("persistent_location");
+        localStorage.removeItem("persistent_photographer");
+        localStorage.removeItem("persistent_witness");
+        localStorage.removeItem("persistent_witnessSignature");
+        localStorage.removeItem("persistent_clientLogo");
+
+        // Clear witness signature
+        currentWitnessSignature = null;
+
+        // Clear client logo
+        currentClientLogo = null;
+        document.getElementById("logoPreview").style.display = "none";
+        document.getElementById("logoUploadBtn").textContent = "Upload Client Logo";
+
+        // Hide witness signature preview
+        document.getElementById("witnessSignaturePreview").style.display =
+          "none";
+
+        // Clear and hide witness signature canvas
+        const witnessCanvas = document.getElementById("witnessSignatureCanvas");
+        if (witnessCanvas) {
+          const ctx = witnessCanvas.getContext("2d");
+          ctx.clearRect(0, 0, witnessCanvas.width, witnessCanvas.height);
+        }
+
+        // Reset witness signature UI
+        document.getElementById("witnessSignatureContainer").style.display =
+          "none";
+        const button = document.getElementById("witnessSignatureToggle");
+        button.textContent = "Add Witness Signature";
+        button.className = "btn btn-primary";
+
+        console.log("Project info cleared successfully");
+      }
+
+      // Keep the old function name for backwards compatibility
+      function clearPersistentFields() {
+        clearProjectInfo();
+      }
+
+      // Terms and Conditions Management
+      function loadCustomTerms() {
+        const savedTerms = localStorage.getItem("customTermsHTML");
+        if (savedTerms && 
+            !savedTerms.includes('<meta charset') && 
+            !savedTerms.includes('<title>') &&
+            !savedTerms.includes('<!DOCTYPE') &&
+            savedTerms.length < 10000) {
+          currentTermsHTML = savedTerms;
+        } else {
+          // Clear corrupted data and use default
+          if (savedTerms) {
+            console.warn("Corrupted custom terms detected, clearing localStorage");
+            localStorage.removeItem("customTermsHTML");
+          }
+          currentTermsHTML = defaultTermsHTML;
+        }
+        updateTermsDisplay();
+      }
+
+      function updateTermsDisplay() {
+        const container = document.getElementById("termsContainer");
+        if (container) {
+          // Emergency fix: validate that currentTermsHTML is actually terms content
+          if (currentTermsHTML && 
+              !currentTermsHTML.includes('<meta charset') && 
+              !currentTermsHTML.includes('<title>') &&
+              !currentTermsHTML.includes('<!DOCTYPE') &&
+              currentTermsHTML.length < 10000) {
+            container.innerHTML = currentTermsHTML;
+          } else {
+            // Corrupted data detected - reset to default
+            console.warn("Corrupted terms detected, resetting to default");
+            currentTermsHTML = defaultTermsHTML;
+            localStorage.removeItem("customTermsHTML");
+            container.innerHTML = defaultTermsHTML;
+          }
+        }
+      }
+
+      function toggleTermsEditor() {
+        if (isFormLocked) {
+          alert("Form is locked. Press and hold the lock button for 3 seconds to unlock.");
+          return;
+        }
+
+        const section = document.getElementById("termsEditorSection");
+        const button = document.getElementById("termsEditorToggle");
+        const isVisible = !section.classList.contains("hidden");
+
+        if (isVisible) {
+          // Hide editor
+          section.classList.add("hidden");
+          button.textContent = "Modify Talent Release Agreement";
+        } else {
+          // Show editor and populate with current terms
+          section.classList.remove("hidden");
+          button.textContent = "Hide Agreement Editor";
+          document.getElementById("termsEditor").value = currentTermsHTML;
+        }
+      }
+
+      function saveCustomTerms() {
+        const editorContent = document.getElementById("termsEditor").value.trim();
+        
+        if (!editorContent) {
+          alert("Please enter some talent release agreement content before saving.");
+          return;
+        }
+
+        // Basic HTML validation - check for potentially dangerous content
+        const tempDiv = document.createElement("div");
+        try {
+          tempDiv.innerHTML = editorContent;
+          
+          // Update current terms
+          currentTermsHTML = editorContent;
+          
+          // Save to localStorage
+          localStorage.setItem("customTermsHTML", currentTermsHTML);
+          
+          // Update display
+          updateTermsDisplay();
+          
+          // Hide editor
+          toggleTermsEditor();
+          
+          alert("Custom talent release agreement has been saved successfully!");
+          
+        } catch (error) {
+          alert("Invalid HTML content. Please check your formatting and try again.");
+        }
+      }
+
+      function restoreDefaultTerms() {
+        const confirmed = confirm(
+          "Are you sure you want to restore the default talent release agreement?\n\n" +
+          "This will overwrite your custom agreement and cannot be undone."
+        );
+
+        if (confirmed) {
+          // Restore default terms
+          currentTermsHTML = defaultTermsHTML;
+          
+          // Remove custom terms from storage
+          localStorage.removeItem("customTermsHTML");
+          
+          // Update display
+          updateTermsDisplay();
+          
+          // Update editor content if editor is visible
+          const editorTextarea = document.getElementById("termsEditor");
+          if (editorTextarea) {
+            editorTextarea.value = currentTermsHTML;
+          }
+          
+          alert("Talent release agreement has been restored to default.");
+        }
+      }
+
+      function cancelTermsEdit() {
+        // Hide editor without saving
+        const section = document.getElementById("termsEditorSection");
+        const button = document.getElementById("termsEditorToggle");
+        
+        section.classList.add("hidden");
+        button.textContent = "Modify Talent Release Agreement";
+        
+        // Reset editor content to current terms
+        document.getElementById("termsEditor").value = currentTermsHTML;
+      }
+
+      // Convert HTML terms to formatted PDF content
+      function addFormattedTermsToPDF(doc, html, startX, startY, maxWidth) {
+        let currentY = startY;
+        const lineHeight = 3;
+        
+        // Simple approach: convert HTML to plain text but preserve structure
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = html;
+        
+        // Process each top-level element
+        function processElement(element) {
+          if (element.nodeType === Node.TEXT_NODE) {
+            const text = element.textContent.trim();
+            if (text) {
+              doc.setFont(undefined, "normal");
+              const lines = doc.splitTextToSize(text, maxWidth);
+              lines.forEach(line => {
+                if (line.trim()) {
+                  doc.text(line.trim(), startX, currentY);
+                  currentY += lineHeight;
+                }
+              });
+            }
+            return;
+          }
+          
+          if (element.nodeType !== Node.ELEMENT_NODE) return;
+          
+          const tagName = element.tagName.toLowerCase();
+          
+          switch (tagName) {
+            case 'p':
+              const pText = element.textContent.trim();
+              if (pText) {
+                doc.setFont(undefined, "normal");
+                const lines = doc.splitTextToSize(pText, maxWidth);
+                lines.forEach(line => {
+                  if (line.trim()) {
+                    doc.text(line.trim(), startX, currentY);
+                    currentY += lineHeight;
+                  }
+                });
+              }
+              // No extra spacing after paragraph
+              break;
+              
+            case 'ol':
+              currentY += lineHeight; // Small spacing before list
+              let counter = 1;
+              Array.from(element.children).forEach(li => {
+                if (li.tagName.toLowerCase() === 'li') {
+                  const liText = li.textContent.trim();
+                  if (liText) {
+                    // Add number
+                    doc.setFont(undefined, "normal");
+                    doc.text(`${counter}. `, startX, currentY);
+                    
+                    // Add list item text with proper indentation
+                    const listStartX = startX + 12;
+                    const listMaxWidth = maxWidth - 12;
+                    const lines = doc.splitTextToSize(liText, listMaxWidth);
+                    
+                    lines.forEach((line, index) => {
+                      if (line.trim()) {
+                        const xPos = index === 0 ? listStartX : startX + 12;
+                        doc.text(line.trim(), xPos, currentY);
+                        if (index < lines.length - 1) {
+                          currentY += lineHeight;
+                        }
+                      }
+                    });
+                    currentY += lineHeight + 0.5; // Smaller spacing between list items
+                    counter++;
+                  }
+                }
+              });
+              currentY += lineHeight * 0.5; // Smaller spacing after list
+              break;
+              
+            case 'ul':
+              currentY += lineHeight; // Small spacing before list
+              Array.from(element.children).forEach(li => {
+                if (li.tagName.toLowerCase() === 'li') {
+                  const liText = li.textContent.trim();
+                  if (liText) {
+                    // Add bullet
+                    doc.setFont(undefined, "normal");
+                    doc.text('• ', startX, currentY);
+                    
+                    // Add list item text with proper indentation
+                    const listStartX = startX + 10;
+                    const listMaxWidth = maxWidth - 10;
+                    const lines = doc.splitTextToSize(liText, listMaxWidth);
+                    
+                    lines.forEach((line, index) => {
+                      if (line.trim()) {
+                        const xPos = index === 0 ? listStartX : startX + 10;
+                        doc.text(line.trim(), xPos, currentY);
+                        if (index < lines.length - 1) {
+                          currentY += lineHeight;
+                        }
+                      }
+                    });
+                    currentY += lineHeight + 0.5; // Smaller spacing between list items
+                  }
+                }
+              });
+              currentY += lineHeight * 0.5; // Smaller spacing after list
+              break;
+              
+            default:
+              // For other elements, just get the text content
+              const text = element.textContent.trim();
+              if (text) {
+                doc.setFont(undefined, "normal");
+                const lines = doc.splitTextToSize(text, maxWidth);
+                lines.forEach(line => {
+                  if (line.trim()) {
+                    doc.text(line.trim(), startX, currentY);
+                    currentY += lineHeight;
+                  }
+                });
+                currentY += lineHeight;
+              }
+              break;
+          }
+        }
+        
+        // Start processing
+        tempDiv.childNodes.forEach(child => processElement(child));
+        
+        return currentY;
+      }
+
+      // Signature Canvas Management
+      function initializeSignatureCanvas() {
+        const canvas = document.getElementById("signatureCanvas");
+
+        setupCanvas(canvas);
+      }
+
+      function initializeWitnessSignatureCanvas() {
+        const canvas = document.getElementById("witnessSignatureCanvas");
+
+        if (canvas) {
+          // DON'T show the container when initializing
+          setupCanvas(canvas);
+        }
+      }
+
+      function setupCanvas(canvas) {
+        if (!canvas) return;
+
+        // Wait for the canvas to be properly rendered
+        setTimeout(() => {
+          const rect = canvas.getBoundingClientRect();
+
+          // Use a balanced approach - some scaling but not full devicePixelRatio
+          const width = Math.max(rect.width, 300); // Minimum width for functionality
+          const height = Math.max(rect.height, 200); // Minimum height
+
+          // Use 1.5x scaling for better quality without massive file sizes
+          const scaleFactor = 1.5;
+          canvas.width = width * scaleFactor;
+          canvas.height = height * scaleFactor;
+
+          // Set CSS size to fill container
+          canvas.style.width = "100%";
+          canvas.style.height = "200px";
+
+          // Only proceed if canvas has valid dimensions
+          if (canvas.width > 0 && canvas.height > 0) {
+            const ctx = canvas.getContext("2d");
+            // Scale context to match
+            ctx.scale(scaleFactor, scaleFactor);
+            ctx.lineCap = "round";
+            ctx.lineJoin = "round";
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = "#000";
+
+            // Remove existing event listeners to prevent duplicates
+            canvas.removeEventListener("touchstart", startDrawing);
+            canvas.removeEventListener("touchmove", draw);
+            canvas.removeEventListener("touchend", stopDrawing);
+            canvas.removeEventListener("mousedown", startDrawing);
+            canvas.removeEventListener("mousemove", draw);
+            canvas.removeEventListener("mouseup", stopDrawing);
+            canvas.removeEventListener("mouseout", stopDrawing);
+
+            // Add event listeners
+            canvas.addEventListener("touchstart", startDrawing);
+            canvas.addEventListener("touchmove", draw);
+            canvas.addEventListener("touchend", stopDrawing);
+            canvas.addEventListener("mousedown", startDrawing);
+            canvas.addEventListener("mousemove", draw);
+            canvas.addEventListener("mouseup", stopDrawing);
+            canvas.addEventListener("mouseout", stopDrawing);
+          }
+        }, 50);
+      }
+
+      function startDrawing(e) {
+        isDrawing = true;
+        const rect = e.target.getBoundingClientRect();
+        const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+        const y = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top;
+
+        const ctx = e.target.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+      }
+
+      function draw(e) {
+        if (!isDrawing) return;
+
+        e.preventDefault();
+        const rect = e.target.getBoundingClientRect();
+        const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+        const y = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top;
+
+        const ctx = e.target.getContext("2d");
+        ctx.lineTo(x, y);
+        ctx.stroke();
+      }
+
+      function stopDrawing() {
+        isDrawing = false;
+        // Save signature with reduced resolution
+        const canvas = document.getElementById("signatureCanvas");
+
+        if (canvas && canvas.width > 0 && canvas.height > 0) {
+          const imageData = canvas
+            .getContext("2d")
+            .getImageData(0, 0, canvas.width, canvas.height);
+          if (imageData.data.some((channel) => channel !== 0)) {
+            // Create a smaller version of the signature for PDF
+            currentSignature = compressSignature(canvas);
+          }
+        }
+
+        // Check witness signature canvas
+        const witnessCanvas = document.getElementById("witnessSignatureCanvas");
+
+        if (
+          witnessCanvas &&
+          witnessCanvas.width > 0 &&
+          witnessCanvas.height > 0
+        ) {
+          const imageData = witnessCanvas
+            .getContext("2d")
+            .getImageData(0, 0, witnessCanvas.width, witnessCanvas.height);
+          if (imageData.data.some((channel) => channel !== 0)) {
+            currentWitnessSignature = compressSignature(witnessCanvas);
+            localStorage.setItem(
+              "persistent_witnessSignature",
+              currentWitnessSignature
+            );
+
+            // Update the preview indicator and button state
+            document.getElementById("witnessSignaturePreview").style.display =
+              "block";
+            const button = document.getElementById("witnessSignatureToggle");
+            // Don't change button state if box is currently open
+            if (button.textContent !== "Hide Signature Box") {
+              button.textContent = "Witness Signed";
+              button.className = "btn btn-secondary";
+            }
+          }
+        }
+      }
+
+      // Compress signature to reduce file size
+      function compressSignature(sourceCanvas) {
+        // Create a smaller canvas for compression with better balanced dimensions
+        const compressCanvas = document.createElement("canvas");
+        const targetWidth = 250; // Increased for better quality
+        const targetHeight = 100; // Increased for better quality
+
+        // Set canvas size without additional scaling
+        compressCanvas.width = targetWidth;
+        compressCanvas.height = targetHeight;
+        compressCanvas.style.width = targetWidth + "px";
+        compressCanvas.style.height = targetHeight + "px";
+
+        const ctx = compressCanvas.getContext("2d");
+
+        // Fill with white background first (signatures are transparent by default)
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 0, targetWidth, targetHeight);
+
+        // Draw the signature scaled to fit exactly in the target dimensions
+        ctx.drawImage(sourceCanvas, 0, 0, targetWidth, targetHeight);
+
+        // Return compressed signature with good quality balance
+        return compressCanvas.toDataURL("image/jpeg", 0.8);
+      }
+
+      function clearSignature() {
+        const canvas = document.getElementById("signatureCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        currentSignature = null;
+      }
+
+      // Witness Signature Management
+      function toggleWitnessSignature() {
+        const container = document.getElementById("witnessSignatureContainer");
+        const button = document.getElementById("witnessSignatureToggle");
+        const isVisible = container.style.display === "block";
+
+        if (isVisible) {
+          // Hide the signature box
+          container.style.display = "none";
+          if (currentWitnessSignature) {
+            button.textContent = "Show Signature Box";
+            button.className = "btn btn-secondary";
+          } else {
+            button.textContent = "Add Witness Signature";
+            button.className = "btn btn-primary";
+          }
+        } else {
+          // Show the signature box
+          container.style.display = "block";
+          button.textContent = "Hide Signature Box";
+          button.className = "btn btn-secondary";
+
+          // Initialize canvas and restore existing signature if present
+          setTimeout(() => {
+            const witnessCanvas = document.getElementById(
+              "witnessSignatureCanvas"
+            );
+            if (witnessCanvas) {
+              // Force reinitialize the canvas to ensure proper sizing
+              setupCanvas(witnessCanvas);
+
+              // Wait a bit longer for canvas to be fully initialized before restoring
+              setTimeout(() => {
+                if (currentWitnessSignature) {
+                  const ctx = witnessCanvas.getContext("2d");
+                  const img = new Image();
+                  img.onload = function () {
+                    ctx.clearRect(
+                      0,
+                      0,
+                      witnessCanvas.width,
+                      witnessCanvas.height
+                    );
+                    // Account for the 1.5x scaling when restoring
+                    const scaleFactor = 1.5;
+                    ctx.drawImage(
+                      img,
+                      0,
+                      0,
+                      witnessCanvas.width / scaleFactor,
+                      witnessCanvas.height / scaleFactor
+                    );
+                  };
+                  img.src = currentWitnessSignature;
+                }
+              }, 100); // Additional delay for restoration
+            }
+          }, 100);
+        }
+      }
+
+      function restoreWitnessSignature() {
+        const canvas = document.getElementById("witnessSignatureCanvas");
+        if (
+          canvas &&
+          currentWitnessSignature &&
+          canvas.width > 0 &&
+          canvas.height > 0
+        ) {
+          const ctx = canvas.getContext("2d");
+          const img = new Image();
+          img.onload = function () {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            // Account for the 1.5x scaling when restoring
+            const scaleFactor = 1.5;
+            ctx.drawImage(
+              img,
+              0,
+              0,
+              canvas.width / scaleFactor,
+              canvas.height / scaleFactor
+            );
+          };
+          img.src = currentWitnessSignature;
+        }
+      }
+
+      function openWitnessSignature() {
+        // This function is kept for backwards compatibility but now just calls toggle
+        toggleWitnessSignature();
+      }
+
+      function clearWitnessSignature() {
+        const canvas = document.getElementById("witnessSignatureCanvas");
+        if (canvas && canvas.width > 0 && canvas.height > 0) {
+          const ctx = canvas.getContext("2d");
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+        currentWitnessSignature = null;
+        localStorage.removeItem("persistent_witnessSignature");
+        hideWitnessSignaturePreview();
+
+        // Update button state when signature is cleared
+        const button = document.getElementById("witnessSignatureToggle");
+        button.textContent = "Add Witness Signature";
+        button.className = "btn btn-primary";
+      }
+
+      function showWitnessSignaturePreview() {
+        document.getElementById("witnessSignaturePreview").style.display =
+          "block";
+
+        // Update button to show signature is captured but DON'T auto-expand
+        const button = document.getElementById("witnessSignatureToggle");
+        button.textContent = "Show Signature Box";
+        button.className = "btn btn-secondary";
+
+        // Ensure the signature container stays collapsed
+        const container = document.getElementById("witnessSignatureContainer");
+        container.style.display = "none";
+      }
+
+      function hideWitnessSignaturePreview() {
+        document.getElementById("witnessSignaturePreview").style.display =
+          "none";
+
+        // Reset button state
+        const button = document.getElementById("witnessSignatureToggle");
+        button.textContent = "Add Witness Signature";
+        button.className = "btn btn-primary";
+      }
+
+      // Client Logo Management
+      function uploadClientLogo() {
+        if (isFormLocked) {
+          alert("Form is locked. Press and hold the lock button for 3 seconds to unlock.");
+          return;
+        }
+        
+        const fileInput = document.getElementById("logoFileInput");
+        fileInput.click();
+      }
+
+      function handleLogoUpload(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        // Validate file type
+        if (!file.type.startsWith('image/')) {
+          alert('Please select an image file.');
+          return;
+        }
+
+        // Validate file size (limit to 5MB)
+        if (file.size > 5 * 1024 * 1024) {
+          alert('Image file is too large. Please select an image smaller than 5MB.');
+          return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          // Create an image to get dimensions and compress if needed
+          const img = new Image();
+          img.onload = function() {
+            // Create canvas for compression and sizing
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Calculate scaling to fit within reasonable bounds for PDF
+            const maxWidth = 400;
+            const maxHeight = 200;
+            let { width, height } = img;
+            
+            // Scale down if too large
+            if (width > maxWidth || height > maxHeight) {
+              const scale = Math.min(maxWidth / width, maxHeight / height);
+              width *= scale;
+              height *= scale;
+            }
+            
+            canvas.width = width;
+            canvas.height = height;
+            
+            // Fill with white background to handle PNG transparency
+            ctx.fillStyle = 'white';
+            ctx.fillRect(0, 0, width, height);
+            
+            // Draw image on top
+            ctx.drawImage(img, 0, 0, width, height);
+            
+            // Convert to base64 with compression
+            currentClientLogo = canvas.toDataURL('image/jpeg', 0.8);
+            
+            // Update UI
+            document.getElementById("logoImage").src = currentClientLogo;
+            document.getElementById("logoPreview").style.display = "flex";
+            document.getElementById("logoUploadBtnInline").textContent = "Change Logo";
+            
+            // Save to localStorage
+            localStorage.setItem("persistent_clientLogo", currentClientLogo);
+          };
+          img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+        
+        // Clear the file input
+        event.target.value = '';
+      }
+
+      function removeClientLogo() {
+        if (isFormLocked) {
+          alert("Form is locked. Press and hold the lock button for 3 seconds to unlock.");
+          return;
+        }
+        
+        currentClientLogo = null;
+        document.getElementById("logoPreview").style.display = "none";
+        document.getElementById("logoUploadBtnInline").textContent = "Add Logo";
+        localStorage.removeItem("persistent_clientLogo");
+      }
+      function toggleChildrenSection() {
+        const section = document.getElementById("childrenSection");
+        const button = document.getElementById("childrenToggle");
+        const isVisible = section.style.display !== "none";
+
+        if (isVisible) {
+          // Hide the children section
+          section.style.display = "none";
+          button.textContent = "Add Children/Dependants";
+          button.className = "btn btn-secondary";
+        } else {
+          // Show the children section
+          section.style.display = "block";
+          button.textContent = "Hide Children/Dependants";
+          button.className = "btn btn-secondary";
+        }
+      }
+
+      async function startCamera() {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({
+            video: {
+              facingMode: currentFacingMode, // Use current facing mode (default: front)
+              width: { ideal: 1280 },
+              height: { ideal: 720 },
+            },
+          });
+
+          cameraStream = stream;
+          const video = document.getElementById("cameraPreview");
+          video.srcObject = stream;
+          video.classList.remove("hidden");
+
+          // Add front camera class for CSS mirroring during preview
+          if (currentFacingMode === "user") {
+            video.classList.add("front-camera");
+          } else {
+            video.classList.remove("front-camera");
+          }
+
+          // Update buttons
+          document
+            .querySelector('button[onclick="startCamera()"]')
+            .classList.add("hidden");
+          document
+            .querySelector('button[onclick="capturePhoto()"]')
+            .classList.remove("hidden");
+          document
+            .querySelector('button[onclick="switchCamera()"]')
+            .classList.remove("hidden");
+          document
+            .querySelector('button[onclick="retakePhoto()"]')
+            .classList.remove("hidden");
+        } catch (error) {
+          console.error("Error accessing camera:", error);
+          alert("Unable to access camera. Please check permissions.");
+        }
+      }
+
+      async function switchCamera() {
+        try {
+          // Stop current stream
+          if (cameraStream) {
+            cameraStream.getTracks().forEach((track) => track.stop());
+          }
+
+          // Toggle facing mode
+          currentFacingMode = currentFacingMode === "user" ? "environment" : "user";
+
+          // Start camera with new facing mode
+          const stream = await navigator.mediaDevices.getUserMedia({
+            video: {
+              facingMode: currentFacingMode,
+              width: { ideal: 1280 },
+              height: { ideal: 720 },
+            },
+          });
+
+          cameraStream = stream;
+          const video = document.getElementById("cameraPreview");
+          video.srcObject = stream;
+
+          // Update front camera class for CSS mirroring
+          if (currentFacingMode === "user") {
+            video.classList.add("front-camera");
+          } else {
+            video.classList.remove("front-camera");
+          }
+
+          // Keep button text consistent
+          const switchBtn = document.getElementById("switchCameraBtn");
+          switchBtn.textContent = "Switch Camera";
+
+        } catch (error) {
+          console.error("Error switching camera:", error);
+          alert("Unable to switch camera. This device may only have one camera.");
+          
+          // Revert facing mode if switch failed
+          currentFacingMode = currentFacingMode === "user" ? "environment" : "user";
+        }
+      }
+
+      function capturePhoto() {
+        const video = document.getElementById("cameraPreview");
+        const canvas = document.getElementById("photoCanvas");
+        const preview = document.getElementById("photoPreview");
+
+        // Force 1:1 square aspect ratio for entire pipeline
+        const targetSize = 400; // Square dimensions for good quality
+
+        // Set canvas to square
+        canvas.width = targetSize;
+        canvas.height = targetSize;
+        canvas.style.width = targetSize + "px";
+        canvas.style.height = targetSize + "px";
+
+        const ctx = canvas.getContext("2d");
+
+        // Calculate center crop from video to fill square canvas
+        const videoWidth = video.videoWidth;
+        const videoHeight = video.videoHeight;
+
+        // Find the smaller dimension to crop from center
+        const minDimension = Math.min(videoWidth, videoHeight);
+        const cropX = (videoWidth - minDimension) / 2;
+        const cropY = (videoHeight - minDimension) / 2;
+
+        // Draw the image normally - CSS handles preview mirroring only
+        ctx.drawImage(
+          video,
+          cropX,
+          cropY,
+          minDimension,
+          minDimension, // Source: center crop square
+          0,
+          0,
+          targetSize,
+          targetSize // Destination: full canvas
+        );
+
+        // Convert to JPEG with good quality for ~100KB target
+        currentPhoto = canvas.toDataURL("image/jpeg", 0.85);
+
+        // Show preview
+        preview.src = currentPhoto;
+        preview.classList.remove("hidden");
+        video.classList.add("hidden");
+
+        // Stop camera
+        if (cameraStream) {
+          cameraStream.getTracks().forEach((track) => track.stop());
+          cameraStream = null;
+        }
+
+        // Update buttons
+        document
+          .querySelector('button[onclick="capturePhoto()"]')
+          .classList.add("hidden");
+        document
+          .querySelector('button[onclick="switchCamera()"]')
+          .classList.add("hidden");
+        document.querySelector('button[onclick="startCamera()"]').textContent =
+          "Photo Captured";
+        document
+          .querySelector('button[onclick="startCamera()"]')
+          .classList.remove("hidden");
+      }
+
+      function retakePhoto() {
+        const video = document.getElementById("cameraPreview");
+        const preview = document.getElementById("photoPreview");
+
+        preview.classList.add("hidden");
+        currentPhoto = null;
+
+        // Reset buttons
+        document.querySelector('button[onclick="startCamera()"]').textContent =
+          "Take Photo";
+        document
+          .querySelector('button[onclick="capturePhoto()"]')
+          .classList.add("hidden");
+        document
+          .querySelector('button[onclick="switchCamera()"]')
+          .classList.add("hidden");
+        document
+          .querySelector('button[onclick="retakePhoto()"]')
+          .classList.add("hidden");
+
+        // Reset switch camera button text
+        const switchBtn = document.getElementById("switchCameraBtn");
+        switchBtn.textContent = "Switch Camera";
+
+        // Stop camera if running
+        if (cameraStream) {
+          cameraStream.getTracks().forEach((track) => track.stop());
+          cameraStream = null;
+        }
+      }
+
+      // Form Submission
+      async function submitForm() {
+        try {
+          // Validate form
+          const errors = validateForm();
+
+          if (errors.length > 0) {
+            displayValidationErrors(errors);
+            return;
+          }
+
+          // Save persistent fields
+          savePersistentFields();
+
+          // Prepare form data
+          const formData = {
+            timestamp: new Date().toISOString(),
+
+            // Persistent fields
+            clientName: document.getElementById("clientName").value,
+            projectName: document.getElementById("projectName").value,
+            location: document.getElementById("location").value,
+            photographer: document.getElementById("photographer").value,
+            witness: document.getElementById("witness").value,
+
+            // Talent fields
+            talentName: document.getElementById("talentName").value,
+            phone: document.getElementById("phone").value,
+            email: document.getElementById("email").value,
+
+            // Agreement
+            agreeTerms: document.getElementById("agreeTerms").checked,
+            ageConfirm: document.getElementById("ageConfirm").checked,
+
+            // Children/Dependants (if applicable)
+            childrenIncluded:
+              document.getElementById("childrenSection").style.display !==
+              "none",
+            childName1:
+              document.getElementById("childrenSection").style.display !==
+              "none"
+                ? document.getElementById("childName1").value
+                : "",
+            childName2:
+              document.getElementById("childrenSection").style.display !==
+              "none"
+                ? document.getElementById("childName2").value
+                : "",
+            childName3:
+              document.getElementById("childrenSection").style.display !==
+              "none"
+                ? document.getElementById("childName3").value
+                : "",
+            guardianConfirm:
+              document.getElementById("childrenSection").style.display !==
+              "none"
+                ? document.getElementById("guardianConfirm").checked
+                : false,
+
+            // Media
+            signature: currentSignature,
+            witnessSignature: currentWitnessSignature,
+            photo: currentPhoto,
+            clientLogo: currentClientLogo,
+
+            // Capture terms at time of submission
+            termsHTML: currentTermsHTML,
+
+            // Metadata
+            userAgent: navigator.userAgent,
+            status: "completed",
+          };
+
+          // Save to storage
+          const submissions = JSON.parse(
+            localStorage.getItem("submissions") || "[]"
+          );
+          submissions.push(formData);
+          localStorage.setItem("submissions", JSON.stringify(submissions));
+
+          // Generate PDF
+          await generatePDF(formData);
+
+          // Show success message
+          displaySuccessMessage();
+
+          // Reset form
+          resetForm();
+        } catch (error) {
+          console.error("Submission error:", error);
+          alert("Error submitting form. Please try again.");
+        }
+      }
+
+      function resetForm() {
+        // Clear validation errors
+        clearValidationErrors();
+
+        // Clear talent fields only
+        document.getElementById("talentName").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("agreeTerms").checked = false;
+        document.getElementById("ageConfirm").checked = false;
+
+        // Clear children section if visible
+        const childrenSection = document.getElementById("childrenSection");
+        if (childrenSection.style.display !== "none") {
+          document.getElementById("childName1").value = "";
+          document.getElementById("childName2").value = "";
+          document.getElementById("childName3").value = "";
+          document.getElementById("guardianConfirm").checked = false;
+
+          // Hide children section
+          childrenSection.style.display = "none";
+          document.getElementById("childrenToggle").textContent =
+            "Add Children/Dependants";
+        }
+
+        // Clear signature and photo
+        clearSignature();
+        retakePhoto();
+        currentSignature = null;
+        currentPhoto = null;
+      }
+
+      // Image loading helper
+      function loadImage(src) {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.onload = () => resolve(img);
+          img.onerror = reject;
+          img.src = src;
+        });
+      }
+
+      // PDF Generation
+      async function generatePDF(formData) {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+
+        const pageWidth = doc.internal.pageSize.width;
+        const pageHeight = doc.internal.pageSize.height;
+        const margin = 15;
+        const contentWidth = pageWidth - margin * 2;
+        let yPos = 20;
+
+        // Header - TALENT RELEASE FORM
+        doc.setFontSize(18);
+        doc.setFont(undefined, "bold");
+        doc.text("TALENT RELEASE FORM", pageWidth / 2, yPos, {
+          align: "center",
+        });
+
+        // Add logo in top right corner if available
+        if (formData.clientLogo) {
+          try {
+            // Define logo area (top right corner)
+            const logoAreaWidth = 35; // PDF units (mm)
+            const logoAreaHeight = 18; // PDF units (mm)
+            const logoX = pageWidth - margin - logoAreaWidth;
+            const logoY = 10; // Small margin from top
+            
+            // Load the image and get actual dimensions
+            const img = await loadImage(formData.clientLogo);
+            const imgAspectRatio = img.naturalWidth / img.naturalHeight;
+            const areaAspectRatio = logoAreaWidth / logoAreaHeight;
+            
+            let drawWidth, drawHeight;
+            
+            // Calculate dimensions that fit within area while maintaining aspect ratio
+            if (imgAspectRatio > areaAspectRatio) {
+              // Image is wider - fit to width
+              drawWidth = logoAreaWidth;
+              drawHeight = logoAreaWidth / imgAspectRatio;
+            } else {
+              // Image is taller - fit to height  
+              drawHeight = logoAreaHeight;
+              drawWidth = logoAreaHeight * imgAspectRatio;
+            }
+            
+            // Center the logo within the area
+            const drawX = logoX + (logoAreaWidth - drawWidth) / 2;
+            const drawY = logoY + (logoAreaHeight - drawHeight) / 2;
+            
+            // Add the logo to PDF with calculated dimensions
+            doc.addImage(
+              formData.clientLogo,
+              "JPEG",
+              drawX,
+              drawY,
+              drawWidth,
+              drawHeight
+            );
+            
+          } catch (e) {
+            console.warn("Failed to add logo to PDF:", e);
+          }
+        }
+
+        // Submission date and time only
+        yPos += 8;
+        doc.setFontSize(9);
+        doc.setFont(undefined, "normal");
+        const submissionDate = new Date(formData.timestamp);
+        const submissionText = `Date: ${submissionDate.toLocaleDateString()} | Time: ${submissionDate.toLocaleTimeString()}`;
+        doc.text(submissionText, pageWidth / 2, yPos, { align: "center" });
+
+        yPos += 15;
+
+        // Project Information Table (4 columns)
+        doc.setFontSize(10);
+        doc.setFont(undefined, "bold");
+        doc.text("PROJECT INFORMATION", margin, yPos);
+        yPos += 3; // Reduced spacing after heading
+
+        // Create 4-column project info table
+        doc.setFont(undefined, "normal");
+        doc.setFontSize(9);
+
+        // Define cell height here
+        const cellHeight = 6;
+
+        // Calculate column widths for 4 columns
+        const labelWidth = contentWidth * 0.2; // 20% for labels
+        const valueWidth = contentWidth * 0.3; // 30% for values
+
+        const col1X = margin; // Client label
+        const col2X = margin + labelWidth; // Client value
+        const col3X = margin + labelWidth + valueWidth; // Project label
+        const col4X = margin + labelWidth + valueWidth + labelWidth; // Project value
+
+        // Row 1: Client and Project
+        const row1Y = yPos;
+
+        // Draw borders for row 1
+        doc.rect(col1X, row1Y, labelWidth, cellHeight);
+        doc.rect(col2X, row1Y, valueWidth, cellHeight);
+        doc.rect(col3X, row1Y, labelWidth, cellHeight);
+        doc.rect(col4X, row1Y, valueWidth, cellHeight);
+
+        // Add text for row 1
+        doc.setFont(undefined, "bold");
+        doc.text("Client", col1X + 2, row1Y + 4);
+        doc.text("Project", col3X + 2, row1Y + 4);
+        doc.setFont(undefined, "normal");
+        doc.text(formData.clientName || "N/A", col2X + 2, row1Y + 4);
+        doc.text(formData.projectName || "N/A", col4X + 2, row1Y + 4);
+
+        // Row 2: Location and Photographer
+        const row2Y = yPos + cellHeight;
+
+        // Draw borders for row 2
+        doc.rect(col1X, row2Y, labelWidth, cellHeight);
+        doc.rect(col2X, row2Y, valueWidth, cellHeight);
+        doc.rect(col3X, row2Y, labelWidth, cellHeight);
+        doc.rect(col4X, row2Y, valueWidth, cellHeight);
+
+        // Add text for row 2
+        doc.setFont(undefined, "bold");
+        doc.text("Location", col1X + 2, row2Y + 4);
+        doc.text("Photographer", col3X + 2, row2Y + 4);
+        doc.setFont(undefined, "normal");
+        doc.text(formData.location || "N/A", col2X + 2, row2Y + 4);
+        doc.text(formData.photographer || "N/A", col4X + 2, row2Y + 4);
+
+        yPos += 2 * cellHeight + 10;
+
+        // Talent Information Table with Photo
+        doc.setFontSize(10);
+        doc.setFont(undefined, "bold");
+        doc.text("TALENT INFORMATION", margin, yPos);
+        yPos += 3; // Reduced spacing after heading
+
+        // Calculate layout for talent info + photo
+        const photoBoxWidth = 50;
+        const photoBoxHeight = 50;
+        const talentInfoWidth = contentWidth - photoBoxWidth - 5; // 5px gap
+
+        const talentData = [
+          ["Name", formData.talentName || "N/A"],
+          ["Email", formData.email || "N/A"],
+          ["Phone", formData.phone || "N/A"],
+        ];
+
+        doc.setFont(undefined, "normal");
+        doc.setFontSize(9);
+
+        // Draw talent info table (left side)
+        const talentCol1Width = talentInfoWidth * 0.3;
+        const talentCol2Width = talentInfoWidth * 0.7;
+
+        for (let i = 0; i < talentData.length; i++) {
+          const row = talentData[i];
+          const rowY = yPos + i * cellHeight;
+
+          // Draw borders
+          doc.rect(margin, rowY, talentCol1Width, cellHeight);
+          doc.rect(margin + talentCol1Width, rowY, talentCol2Width, cellHeight);
+
+          // Add text
+          doc.setFont(undefined, "bold");
+          doc.text(row[0], margin + 2, rowY + 4);
+          doc.setFont(undefined, "normal");
+          doc.text(row[1], margin + talentCol1Width + 2, rowY + 4);
+        }
+
+        // Draw photo box (right side)
+        const photoBoxX = margin + talentInfoWidth + 5;
+        const photoBoxY = yPos;
+
+        doc.rect(photoBoxX, photoBoxY, photoBoxWidth, photoBoxHeight);
+
+        // Add photo or placeholder text with proper aspect ratio
+        if (formData.photo) {
+          try {
+            // We need to calculate aspect ratio synchronously for PDF generation
+            // Create a temporary image element to decode the data URL
+            const tempImg = document.createElement("img");
+            tempImg.src = formData.photo;
+
+            // For synchronous handling, we'll use a different approach
+            // Extract dimensions from the data URL if possible, or use a reasonable default
+            const photoData = formData.photo;
+
+            // Calculate best fit within photo box maintaining aspect ratio
+            // Assume common mobile camera aspect ratios for calculation
+            const assumedAspectRatio = 1; // Common mobile camera ratio
+            const boxAspectRatio = (photoBoxWidth - 4) / (photoBoxHeight - 4);
+
+            let drawWidth, drawHeight, drawX, drawY;
+
+            if (assumedAspectRatio > boxAspectRatio) {
+              // Image is wider - fit to width
+              drawWidth = photoBoxWidth - 4;
+              drawHeight = drawWidth / assumedAspectRatio;
+              drawX = photoBoxX + 2;
+              drawY = photoBoxY + (photoBoxHeight - drawHeight) / 2;
+            } else {
+              // Image is taller - fit to height
+              drawHeight = photoBoxHeight - 4;
+              drawWidth = drawHeight * assumedAspectRatio;
+              drawX = photoBoxX + (photoBoxWidth - drawWidth) / 2;
+              drawY = photoBoxY + 2;
+            }
+
+            doc.addImage(
+              formData.photo,
+              "JPEG",
+              drawX,
+              drawY,
+              drawWidth,
+              drawHeight
+            );
+          } catch (e) {
+            doc.setFontSize(8);
+            doc.text(
+              "Photo capture failed",
+              photoBoxX + photoBoxWidth / 2,
+              photoBoxY + photoBoxHeight / 2,
+              { align: "center" }
+            );
+          }
+        } else {
+          doc.setFontSize(8);
+          doc.text(
+            "No image captured",
+            photoBoxX + photoBoxWidth / 2,
+            photoBoxY + photoBoxHeight / 2,
+            { align: "center" }
+          );
+        }
+
+        yPos += talentData.length * cellHeight + 8;
+
+        // Dependants section (if applicable) - moved up to be directly under talent info
+        if (formData.childrenIncluded && formData.childName1) {
+          doc.setFontSize(10);
+          doc.setFont(undefined, "bold");
+          doc.text("DEPENDANTS", margin, yPos);
+          yPos += 3; // Reduced spacing after heading
+
+          doc.setFont(undefined, "normal");
+          doc.setFontSize(9);
+
+          // List dependants
+          const dependents = [];
+          if (formData.childName1) dependents.push(formData.childName1);
+          if (formData.childName2) dependents.push(formData.childName2);
+          if (formData.childName3) dependents.push(formData.childName3);
+
+          dependents.forEach((name) => {
+            doc.text(`• ${name}`, margin + 5, yPos);
+            yPos += 4;
+          });
+
+          yPos += 2;
+          doc.setFont(undefined, "italic");
+          doc.text(
+            "I declare that I am the parent or legal guardian of the child(ren) named above.*",
+            margin,
+            yPos
+          );
+          yPos += 8;
+        }
+
+        // Ensure minimum spacing after talent/dependants section before terms
+        // Check if we need to account for photo box height
+        const talentSectionEndY = yPos;
+        const photoBoxEndY = photoBoxY + photoBoxHeight;
+
+        // Use the lower of the two positions to ensure no overlap
+        yPos = Math.max(talentSectionEndY, photoBoxEndY + 8);
+
+        // Talent Release Agreement Section
+        doc.setFontSize(10);
+        doc.setFont(undefined, "bold");
+        doc.text("TALENT RELEASE AGREEMENT", margin, yPos);
+        yPos += 4; // Reduced spacing after heading
+
+        // Add terms text with smaller font for long content
+        doc.setFontSize(6); // Even smaller font size to fit more content
+        doc.setFont(undefined, "normal");
+        
+        // Use terms from form data (historical) or current terms
+        const termsHTML = formData.termsHTML || currentTermsHTML || defaultTermsHTML;
+        yPos = addFormattedTermsToPDF(doc, termsHTML, margin + 2, yPos, contentWidth - 4);
+        
+        // Add some spacing after terms
+        yPos += 8;
+
+        // Signatures section (2 columns)
+        const colWidth = (contentWidth - 10) / 2;
+        const leftColX = margin;
+        const rightColX = margin + colWidth + 10;
+
+        // Talent Signature (Left Column)
+        doc.setFontSize(10);
+        doc.setFont(undefined, "bold");
+        doc.text("TALENT SIGNATURE", leftColX, yPos);
+
+        // Witness Signature (Right Column)
+        doc.text("WITNESS SIGNATURE", rightColX, yPos);
+        yPos += 3; // Reduced spacing after headings
+
+        // Signature boxes
+        const sigBoxHeight = 25;
+        doc.rect(leftColX, yPos, colWidth, sigBoxHeight);
+        doc.rect(rightColX, yPos, colWidth, sigBoxHeight);
+
+        // Add signatures if available
+        if (formData.signature) {
+          try {
+            doc.addImage(
+              formData.signature,
+              "PNG",
+              leftColX + 2,
+              yPos + 2,
+              colWidth - 4,
+              sigBoxHeight - 4
+            );
+          } catch (e) {
+            doc.setFontSize(8);
+            doc.text("Signature capture failed", leftColX + 2, yPos + 12);
+          }
+        }
+
+        if (formData.witnessSignature) {
+          try {
+            doc.addImage(
+              formData.witnessSignature,
+              "PNG",
+              rightColX + 2,
+              yPos + 2,
+              colWidth - 4,
+              sigBoxHeight - 4
+            );
+          } catch (e) {
+            doc.setFontSize(8);
+            doc.text("Signature capture failed", rightColX + 2, yPos + 12);
+          }
+        }
+
+        yPos += sigBoxHeight + 3;
+
+        // Signature details
+        doc.setFontSize(8);
+        doc.setFont(undefined, "normal");
+
+        // Left column - Talent details
+        doc.text(`Name: ${formData.talentName}`, leftColX, yPos);
+        doc.text(
+          `Date: ${submissionDate.toLocaleDateString()}`,
+          leftColX,
+          yPos + 4
+        );
+
+        // Right column - Witness details
+        doc.text(`Name: ${formData.witness || "N/A"}`, rightColX, yPos);
+        doc.text(
+          `Date: ${submissionDate.toLocaleDateString()}`,
+          rightColX,
+          yPos + 4
+        );
+
+        yPos += 12;
+
+        // Privacy Notice (small font at bottom)
+        if (yPos < pageHeight - 30) {
+          doc.setFontSize(6); // Smaller privacy notice font
+          doc.setFont(undefined, "italic");
+          const privacyText = `PRIVACY NOTICE: We are collecting your information (and that of any children, if applicable) on behalf of the client for purposes as described above. This information will only be accessed by authorized personnel involved in the project. Some information may be shared with third parties for the purpose of using and managing these images and recordings. Your information will not be disclosed to any other parties unless you have provided consent or we are required or permitted to do so by law.`;
+          const splitPrivacy = doc.splitTextToSize(privacyText, contentWidth);
+          doc.text(splitPrivacy, margin, yPos);
+        }
+
+        // Save PDF
+        doc.save(`${generatePDFFileName(formData)}.pdf`);
+      }
+
+      // Generate PDF filename: Talent Release - [client name] [YYYYMMDD HHMMSS]
+      function generatePDFFileName(formData) {
+        // Use full client name as written, just remove problematic characters for filenames
+        const cleanClientName = (formData.clientName || "Unknown Client")
+          .replace(/[<>:"/\\|?*]/g, "") // Remove only problematic filename characters
+          .trim();
+
+        // Generate date identifier from timestamp using local time
+        const date = new Date(formData.timestamp);
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+        const hours = String(date.getHours()).padStart(2, "0");
+        const minutes = String(date.getMinutes()).padStart(2, "0");
+        const seconds = String(date.getSeconds()).padStart(2, "0");
+
+        const dateIdentifier = `${year}${month}${day}-${hours}${minutes}${seconds}`;
+
+        return `Talent Release - ${cleanClientName} ${dateIdentifier}`;
+      }
+
+      // History Management
+      function showHistory() {
+        document.getElementById("form-view").classList.add("hidden");
+        document.getElementById("history-view").classList.remove("hidden");
+        loadHistory();
+      }
+
+      function showForm() {
+        document.getElementById("history-view").classList.add("hidden");
+        document.getElementById("form-view").classList.remove("hidden");
+      }
+
+      function loadHistory() {
+        const submissions = JSON.parse(
+          localStorage.getItem("submissions") || "[]"
+        );
+        const historyList = document.getElementById("historyList");
+
+        if (submissions.length === 0) {
+          historyList.innerHTML = "<p>No submissions yet.</p>";
+          return;
+        }
+
+        historyList.innerHTML = submissions
+          .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp))
+          .map(
+            (submission) => `
+                    <div class="history-item">
+                        <h4>${submission.talentName}</h4>
+                        <div class="history-meta">
+                            <span>Date: ${new Date(
+                              submission.timestamp
+                            ).toLocaleDateString()}</span>
+                            <span>Time: ${new Date(
+                              submission.timestamp
+                            ).toLocaleTimeString()}</span>
+                        </div>
+                        <p><strong>Project:</strong> ${
+                          submission.projectName || "N/A"
+                        } - ${submission.clientName || "N/A"}</p>
+                        <p><strong>Location:</strong> ${
+                          submission.location || "N/A"
+                        }</p>
+                        <div style="margin-top: 10px;">
+                            <button class="btn btn-primary" onclick="downloadSubmissionPDF('${
+                              submission.timestamp
+                            }')">Download PDF</button>
+                        </div>
+                    </div>
+                `
+          )
+          .join("");
+      }
+
+      function downloadSubmissionPDF(id) {
+        const submissions = JSON.parse(
+          localStorage.getItem("submissions") || "[]"
+        );
+        const submission = submissions.find((s) => s.timestamp === id);
+
+        if (!submission) {
+          alert("Submission not found");
+          return;
+        }
+
+        generatePDF(submission);
+      }
+
+      // Form Lock Management
+      function startLockHold(event) {
+        event.preventDefault();
+        
+        lockStartTime = Date.now();
+        const lockButton = document.getElementById("lockButton");
+        const lockProgress = document.getElementById("lockProgress");
+        
+        // Add visual feedback
+        lockButton.classList.add("holding");
+        lockProgress.classList.add("active");
+        
+        // Vibrate if supported (mobile)
+        if (navigator.vibrate) {
+          navigator.vibrate(50);
+        }
+        
+        // Set timer for 3 seconds
+        lockHoldTimer = setTimeout(() => {
+          toggleFormLock();
+          endLockHold();
+        }, 3000);
+      }
+
+      function endLockHold() {
+        if (lockHoldTimer) {
+          clearTimeout(lockHoldTimer);
+          lockHoldTimer = null;
+        }
+        
+        const lockButton = document.getElementById("lockButton");
+        const lockProgress = document.getElementById("lockProgress");
+        
+        // Remove visual feedback
+        lockButton.classList.remove("holding");
+        lockProgress.classList.remove("active");
+        
+        lockStartTime = 0;
+      }
+
+      function toggleFormLock() {
+        isFormLocked = !isFormLocked;
+        
+        // Vibrate on toggle (mobile)
+        if (navigator.vibrate) {
+          navigator.vibrate([100, 50, 100]);
+        }
+        
+        updateFormLockState();
+        
+        // Save lock state
+        localStorage.setItem("formLocked", isFormLocked.toString());
+      }
+
+      function updateFormLockState() {
+        const lockIcon = document.getElementById("lockIcon");
+        const lockButton = document.getElementById("lockButton");
+        const lockedIndicator = document.getElementById("lockedIndicator");
+        const termsEditorToggle = document.getElementById("termsEditorToggle");
+        const clearProjectBtn = document.getElementById("clearProjectBtn");
+        const clearHistoryBtn = document.getElementById("clearHistoryBtn");
+        const logoUploadBtnInline = document.getElementById("logoUploadBtnInline");
+        const logoRemoveBtn = document.getElementById("logoRemoveBtn");
+        
+        // Get persistent field elements
+        const clientNameField = document.getElementById("clientName");
+        const projectNameField = document.getElementById("projectName");
+        const locationField = document.getElementById("location");
+        const photographerField = document.getElementById("photographer");
+        const witnessField = document.getElementById("witness");
+        const witnessSignatureToggle = document.getElementById("witnessSignatureToggle");
+        const witnessSignatureContainer = document.getElementById("witnessSignatureContainer");
+        const witnessSignaturePreview = document.getElementById("witnessSignaturePreview");
+        
+        if (isFormLocked) {
+          // Locked state
+          lockIcon.textContent = "🔒";
+          lockButton.classList.add("locked");
+          lockButton.title = "Press and hold for 3 seconds to unlock form";
+          lockedIndicator.classList.remove("hidden");
+          
+          // Hide admin buttons
+          if (termsEditorToggle) termsEditorToggle.style.display = "none";
+          if (clearProjectBtn) clearProjectBtn.style.display = "none";
+          if (clearHistoryBtn) clearHistoryBtn.style.display = "none";
+          if (logoUploadBtnInline) logoUploadBtnInline.style.display = "none";
+          if (logoRemoveBtn) logoRemoveBtn.style.display = "none";
+          if (witnessSignatureToggle) witnessSignatureToggle.style.display = "none";
+          
+          // Hide witness signature elements
+          if (witnessSignatureContainer) witnessSignatureContainer.style.display = "none";
+          // Keep witness signature preview visible if signature exists
+          if (witnessSignaturePreview && currentWitnessSignature) {
+            witnessSignaturePreview.style.display = "block";
+          } else if (witnessSignaturePreview) {
+            witnessSignaturePreview.style.display = "none";
+          }
+          
+          // Disable persistent fields but keep them visible
+          if (clientNameField) clientNameField.disabled = true;
+          if (projectNameField) projectNameField.disabled = true;
+          if (locationField) locationField.disabled = true;
+          if (photographerField) photographerField.disabled = true;
+          if (witnessField) witnessField.disabled = true;
+          
+          // Remove margin from logo container when locked but keep flex-end alignment
+          const logoContainer = document.getElementById("logoColumnContainer");
+          if (logoContainer) {
+            logoContainer.style.marginBottom = "0px";
+            logoContainer.style.justifyContent = "flex-end";
+          }
+          
+        } else {
+          // Unlocked state
+          lockIcon.textContent = "🔓";
+          lockButton.classList.remove("locked");
+          lockButton.title = "Press and hold for 3 seconds to lock form";
+          lockedIndicator.classList.add("hidden");
+          
+          // Show admin buttons
+          if (termsEditorToggle) termsEditorToggle.style.display = "block";
+          if (clearProjectBtn) clearProjectBtn.style.display = "block";
+          if (clearHistoryBtn) clearHistoryBtn.style.display = "block";
+          if (logoUploadBtnInline) logoUploadBtnInline.style.display = "block";
+          if (logoRemoveBtn) logoRemoveBtn.style.display = "block";
+          if (witnessSignatureToggle) witnessSignatureToggle.style.display = "block";
+          
+          // Restore witness signature elements to their previous state
+          if (witnessSignatureContainer) {
+            // Container should remain hidden when unlocked (default collapsed state)
+            witnessSignatureContainer.style.display = "none";
+          }
+          if (witnessSignaturePreview) {
+            // Restore preview if there's a signature
+            if (currentWitnessSignature) {
+              witnessSignaturePreview.style.display = "block";
+            }
+          }
+          
+          // Fix witness signature button text
+          if (witnessSignatureToggle) {
+            if (currentWitnessSignature) {
+              witnessSignatureToggle.textContent = "Show Signature Box";
+              witnessSignatureToggle.className = "btn btn-secondary";
+            } else {
+              witnessSignatureToggle.textContent = "Add Witness Signature";
+              witnessSignatureToggle.className = "btn btn-primary";
+            }
+          }
+          
+          // Enable persistent fields
+          if (clientNameField) clientNameField.disabled = false;
+          if (projectNameField) projectNameField.disabled = false;
+          if (locationField) locationField.disabled = false;
+          if (photographerField) photographerField.disabled = false;
+          if (witnessField) witnessField.disabled = false;
+          
+          // Restore margin to logo container when unlocked and keep flex-end alignment
+          const logoContainer = document.getElementById("logoColumnContainer");
+          if (logoContainer) {
+            logoContainer.style.marginBottom = "8px";
+            logoContainer.style.justifyContent = "flex-end";
+          }
+        }
+      }
+
+      // Load lock state from storage
+      function loadFormLockState() {
+        const savedLockState = localStorage.getItem("formLocked");
+        if (savedLockState === "true") {
+          isFormLocked = true;
+        }
+      }
+
+      function clearHistoryWithConfirmation() {
+        if (isFormLocked) {
+          alert("Form is locked. Press and hold the lock button for 3 seconds to unlock.");
+          return;
+        }
+
+        const submissions = JSON.parse(
+          localStorage.getItem("submissions") || "[]"
+        );
+        
+        if (submissions.length === 0) {
+          alert("No history to clear.");
+          return;
+        }
+
+        // Create custom confirmation dialog
+        const confirmed = confirm(
+          `Are you sure you want to clear all form history?\n\n` +
+          `This will permanently delete ${submissions.length} submission${submissions.length === 1 ? '' : 's'}.\n\n` +
+          `This action cannot be undone.`
+        );
+
+        if (confirmed) {
+          // Clear the submissions from localStorage
+          localStorage.removeItem("submissions");
+          
+          // Reload the history view to show empty state
+          loadHistory();
+          
+          // Show success message
+          alert("Form history has been cleared successfully.");
+        }
+      }
+
+      // Resize handler for canvas
+      window.addEventListener("resize", function () {
+        setTimeout(() => {
+          initializeSignatureCanvas();
+        }, 100);
+      });
+
+      // Prevent zoom on iOS
+      document.addEventListener("gesturestart", function (e) {
+        e.preventDefault();
+      });
+
+      // Install prompt for PWA
+      let deferredPrompt;
+      window.addEventListener("beforeinstallprompt", (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+
+        // Show install button (optional)
+        const installBtn = document.createElement("button");
+        installBtn.textContent = "Install App";
+        installBtn.className = "btn btn-primary";
+        installBtn.onclick = () => {
+          deferredPrompt.prompt();
+          deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === "accepted") {
+              console.log("PWA installed");
+            }
+            deferredPrompt = null;
+            installBtn.remove();
+          });
+        };
+
+        document.querySelector(".nav-buttons").appendChild(installBtn);
+      });
+    </script>
+  </body>
+</html>
